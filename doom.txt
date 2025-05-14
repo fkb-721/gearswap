@@ -1,0 +1,19 @@
+ if buff == "doom" then
+        if gain then
+            equip(sets.buff.Doom)
+            --send_command('@input /p Doomed.')
+            disable('ring1','ring2','waist')
+        else
+            enable('ring1','ring2','waist')
+            handle_equipping_gear(player.status)
+        end
+    end
+
+
+
+         sets.buff.Doom = {
+        neck="Nicander's Necklace", --20
+        ring1={name="Eshmun's Ring", bag="wardrobe5"}, --20
+        ring2={name="Eshmun's Ring", bag="wardrobe6"}, --20
+        waist="Gishdubar Sash", --10
+        }
